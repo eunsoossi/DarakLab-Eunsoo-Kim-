@@ -10,15 +10,15 @@
 
 // Tablet & Small Laptops
 @include mediaMd {
-    main {
-        // align-items: center;
-        // text-align: center;
+    // main {
+    //     align-items: center;
+    //     text-align: center;
 
-        .lg-heading {
-            line-height: 1;
-            margin-bottom: 1rem;
-        }
-    }
+    //     .lg-heading {
+    //         line-height: 1;
+    //         margin-bottom: 1rem;
+    //     }
+    // }
 
     ul.menu-nav,
     div.menu-branding {
@@ -32,14 +32,20 @@
     }
 
     .menu-nav {
-        height: 60vh;
+        height: 70vh;
         transform: translate3d(-100%, 0, 0);
         font-size: 24px;
     }
 
     .menu-branding {
-        height: 40vh;
+        height: 30vh;
         transform: translate3d(100%, 0, 0);
+
+        .portrait {
+            // background: url('');
+            width: 100px;
+            height: 100px;
+        }
     }
 }
 

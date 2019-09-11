@@ -55,7 +55,7 @@
     .menu-branding .portrait {
       width: 120px;
       height: 120px;
-      background: url("../img/profile_test2.jpg");
+      background: url("../img/portrait1.png");
       background-size: 100%;
       background-position: center;
       border-radius: 50%;
@@ -74,7 +74,7 @@
     text-transform: uppercase;
     padding: 0.1rem 0;
     font-weight: 300;
-    color: white;
+    color: black;
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
@@ -90,9 +90,6 @@
   transition-delay: 0.3s; }
 
 @media screen and (max-width: 768px) {
-  main .lg-heading {
-    line-height: 1;
-    margin-bottom: 1rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -102,12 +99,15 @@
     div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
-    height: 60vh;
+    height: 70vh;
     transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 40vh;
-    transform: translate3d(100%, 0, 0); } }
+    height: 30vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding .portrait {
+      width: 100px;
+      height: 100px; } }
 
 @media screen and (max-width: 500px) {
   main#home h1 {
@@ -154,7 +154,7 @@ header {
 
 main {
   padding: 2rem;
-  height: 100%; }
+  min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 1rem; }
     main .icons a {
@@ -166,3 +166,10 @@ main {
     overflow: hidden; }
     main#home h1 {
       margin-top: 0.1vh; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  color: black;
+  height: 60px;
+  font-size: 10px; }

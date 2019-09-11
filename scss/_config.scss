@@ -30,6 +30,15 @@ $background-opacity: 0.3;
     }
 }
 
+// Set Text Color
+@function set-text-color($color) {
+    @if (lightness($color) > 40) {
+        @return black; 
+    } @else {
+        @return rgb(226, 226, 226);
+    }
+}
+
 
 
 // Media Query Mixins

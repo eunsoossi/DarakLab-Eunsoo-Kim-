@@ -10,7 +10,7 @@
 body  {
     @include background;
     background: $primary-color;
-    color: black;
+    color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -53,7 +53,8 @@ header {
 
 main {
     padding: 2rem;
-    height: 100%;
+    // height: 100%;
+    min-height: calc(100vh - 60px);
 
     .icons {
         margin-top: 1rem;
@@ -74,4 +75,12 @@ main {
             margin-top: 0.1vh;
         }
     }
+}
+
+#main-footer {
+    text-align: center;
+    padding: 1rem;
+    color: set-text-color($primary-color);
+    height: 60px;
+    font-size: 10px;
 }
