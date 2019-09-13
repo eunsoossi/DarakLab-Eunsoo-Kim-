@@ -1,6 +1,5 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 
 
 * {
@@ -30,7 +29,7 @@ h3 {
 
     &.sm-heading {
         font-size: 0.7rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0.1rem;
         padding: 0.1rem;
         // background: rgba(lighten($color: #c8c6c4, $amount: 2), 0.5);
     }
@@ -57,7 +56,7 @@ main {
     min-height: calc(100vh - 60px);
 
     .icons {
-        margin-top: 1rem;
+        margin-top: 0.2rem;
 
         a {
             padding: 0.2rem;
@@ -84,3 +83,25 @@ main {
     height: 60px;
     font-size: 10px;
 }
+
+// .about-info {
+//     display: grid;
+//     grid-gap: 30px;
+//     grid-template-areas: 
+//     'bioimage bio bio'
+//     'job1 job2 job3';
+//     grid-template-columns: repeat(3, 1fr);
+// }
+
+.bio {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+
+
+@import 'mobile';
