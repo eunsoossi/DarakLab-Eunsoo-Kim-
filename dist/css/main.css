@@ -146,13 +146,6 @@ main {
     main#home h1 {
       margin-top: 0.1vh; }
 
-#main-footer {
-  text-align: center;
-  padding: 1rem;
-  color: black;
-  height: 60px;
-  font-size: 10px; }
-
 .bio {
   margin: 0;
   position: absolute;
@@ -160,6 +153,46 @@ main {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%); }
+
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
+    width: 100%;
+    border: 3px rgba(255, 255, 255, 0.123) solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #40f8bb;
+      transition: all 0.5s ease-out; }
+
+.btn, .btn-dark, .btn-light {
+  display: block;
+  padding: 0.1rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem; }
+  .btn:hover, .btn-dark:hover, .btn-light:hover {
+    background: #40f8bb;
+    color: black; }
+
+.btn-dark {
+  background: #6a6a6a;
+  color: white; }
+
+.btn-light {
+  background: white;
+  color: black; }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  color: black;
+  height: 60px;
+  font-size: 10px; }
+
+@media screen and (min-width: 1171px) {
+  .projects {
+    grid-template-columns: repeat(4, 1fr); } }
 
 @media screen and (max-width: 768px) {
   ul.menu-nav,
@@ -180,7 +213,3 @@ main {
     .menu-branding .portrait {
       width: 100px;
       height: 100px; } }
-
-@media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; } }
