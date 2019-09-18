@@ -78,13 +78,24 @@ main {
 }
 
 // Works/Project 2 (Apple Style)-------------------------------------
+.workGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 30px;
+
+
+    object-fit: cover;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    text-align: center;
+}
 
 article {
     position: relative;
 }
 
 .article-img {
-    height: 200px;
+    height: 400px;
     width: 100%;
     object-fit: cover;
 }
@@ -101,18 +112,6 @@ article {
     font-weight: 500;
 }
 // --------------------------
-
-.workGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    grid-gap: 30px;
-
-
-    object-fit: cover;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
-    text-align: center;
-}
 
 // .poscoImage {
 //     height: 100px;
