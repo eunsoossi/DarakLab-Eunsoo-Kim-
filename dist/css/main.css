@@ -96,12 +96,12 @@
   box-sizing: border-box; }
 
 body {
-  background: #e9e9e9;
+  background: white;
   color: black;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3; }
 
 h1,
 h2,
@@ -111,12 +111,13 @@ h3 {
   h1.lg-heading,
   h2.lg-heading,
   h3.lg-heading {
-    font-size: 1rem; }
+    font-size: 1.1rem; }
   h1.sm-heading,
   h2.sm-heading,
   h3.sm-heading {
     font-size: 0.7rem;
-    margin-bottom: 0.1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.2rem;
     padding: 0.1rem; }
 
 a {
@@ -135,9 +136,11 @@ main {
   padding: 2rem;
   min-height: calc(100vh - 60px); }
   main .icons {
-    margin-top: 0.2rem; }
+    margin-top: 0.1rem;
+    margin-bottom: 4rem; }
     main .icons a {
-      padding: 0.2rem; }
+      padding: 0.1rem;
+      color: rgba(177, 177, 177, 0.157); }
       main .icons a:hover {
         color: #40f8bb;
         transition: all 0.5s ease-out; }
@@ -146,25 +149,41 @@ main {
     main#home h1 {
       margin-top: 0.1vh; }
 
-.bio {
+article {
+  position: relative;
+  display: block; }
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover; }
+
+.headtext {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: -1px; }
+
+.subheadtext {
+  font-size: 15px;
+  font-weight: 500; }
+
+.workGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+  object-fit: cover;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  text-align: center; }
+
+.phrase {
+  font-weight: 300;
   margin: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%); }
-
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px rgba(255, 255, 255, 0.123) solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #40f8bb;
-      transition: all 0.5s ease-out; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -190,26 +209,14 @@ main {
   height: 60px;
   font-size: 10px; }
 
-@media screen and (min-width: 1171px) {
-  .projects {
-    grid-template-columns: repeat(4, 1fr); } }
-
-@media screen and (max-width: 768px) {
-  ul.menu-nav,
-  div.menu-branding {
-    float: none;
+.projects {
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: repeat(3, 1fr); }
+  .projects img {
     width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-  .menu-nav {
-    height: 70vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 24px; }
-  .menu-branding {
-    height: 30vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding .portrait {
-      width: 100px;
-      height: 100px; } }
+    border: 3px rgba(255, 255, 255, 0.123) solid; }
+    .projects img:hover {
+      opacity: 0.5;
+      border-color: #40f8bb;
+      transition: all 0.5s ease-out; }
