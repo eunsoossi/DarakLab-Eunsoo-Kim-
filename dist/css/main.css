@@ -1,6 +1,6 @@
 .menu-btn {
   position: absolute;
-  z-index: 3;
+  z-index: 10;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -132,7 +132,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   width: 100%; }
 
 .text-secondary {
@@ -143,7 +143,7 @@ main {
   min-height: calc(100vh - 60px); }
   main .icons {
     margin-top: 0.1rem;
-    margin-bottom: 4rem; }
+    margin-bottom: 10rem; }
     main .icons a {
       padding: 0.1rem;
       color: rgba(177, 177, 177, 0.157); }
@@ -172,6 +172,19 @@ article {
   width: 100%;
   object-fit: cover; }
 
+.toneblack {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background-color: #14120f;
+  left: 0;
+  z-index: 1;
+  opacity: 0.2;
+  transition: all 1s ease; }
+  .toneblack:hover {
+    background: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease-out; }
+
 .gmarket .projectText,
 .gen315 .projectText,
 .starbucks360 .projectText {
@@ -182,7 +195,8 @@ article {
   bottom: 1%;
   text-align: left;
   color: white;
-  padding: 1rem; }
+  padding: 1rem;
+  z-index: 3; }
 
 .headtext {
   font-size: 20px;
@@ -255,3 +269,16 @@ article {
     .menu-branding .portrait {
       width: 100px;
       height: 100px; } }
+
+@media screen and (max-width: 500px) {
+  .toneblack {
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    background-color: #523718;
+    left: 0;
+    z-index: 1;
+    opacity: 0; }
+    .toneblack:hover {
+      background: rgba(0, 0, 0, 0);
+      transition: all 0.5s ease-out; } }
