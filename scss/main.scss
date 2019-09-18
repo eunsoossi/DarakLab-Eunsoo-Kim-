@@ -19,7 +19,8 @@ body  {
 // Heading
 h1,
 h2,
-h3 {
+h3,
+h4 {
     margin: 0;
     font-weight: 500;
 
@@ -52,7 +53,7 @@ header {
 }
 
 main {
-    padding: 2rem;
+    padding: 0.5rem;
     min-height: calc(100vh - 60px);
 
     .icons {
@@ -69,6 +70,10 @@ main {
         }
     }
 
+    .nameTitle {
+        padding: 1.5rem;
+    }
+
     &#home {
         overflow: hidden;
         h1 {
@@ -81,12 +86,7 @@ main {
 .workGrid {
     display: grid;
     grid-template-columns: repeat(2, minmax(400px, 1fr));
-    grid-gap: 30px;
-
-
-    object-fit: cover;
-    grid-row-gap: 10px;
-    grid-column-gap: 10px;
+    grid-gap: 10px;
     text-align: center;
 }
 
@@ -100,26 +100,34 @@ article {
     object-fit: cover;
 }
 
+
 // Project Name Text --------
+.gmarket {
+    .projectText {
+        color: rgb(0, 0, 0);
+    }
+}
+
+.projectText {
+    position: absolute;
+    width: 100%;
+    bottom: 1%;
+    text-align: left;
+    color: white;
+    padding: 1rem;
+}
 .headtext {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
     letter-spacing: -1px;
 }
 
 .subheadtext {
-    font-size: 15px;
+    font-size: 10px;
     font-weight: 500;
 }
 // --------------------------
 
-// .poscoImage {
-//     height: 100px;
-//     width: 464px;;
-//     background-image: url("img/works/posco.png");
-//     background-repeat: no-repeat;
-//     background-size: 700px 400px;
-// }
 //---------------------------------------------------------------
 
 // about, sentence----------------------------------------
