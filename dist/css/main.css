@@ -92,6 +92,9 @@
 .nav-item:nth-child(4) {
   transition-delay: 0.4s; }
 
+.nav-item:nth-child(5) {
+  transition-delay: 0.5s; }
+
 * {
   box-sizing: border-box; }
 
@@ -157,23 +160,25 @@ main {
 .workGrid {
   display: grid;
   grid-template-columns: repeat(2, minmax(400px, 1fr));
-  grid-gap: 10px;
+  grid-column-gap: 8px;
+  grid-row-gap: 2px;
   text-align: center; }
 
 article {
   position: relative; }
 
 .article-img {
-  height: 400px;
+  height: 500px;
   width: 100%;
   object-fit: cover; }
 
-.gmarket .projectText {
+.gmarket .projectText,
+.gen315 .projectText,
+.starbucks360 .projectText {
   color: black; }
 
 .projectText {
   position: absolute;
-  width: 100%;
   bottom: 1%;
   text-align: left;
   color: white;
@@ -207,7 +212,7 @@ article {
     color: black; }
 
 .btn-dark {
-  background: #6a6a6a;
+  background: gray;
   color: white; }
 
 .btn-light {
@@ -220,18 +225,6 @@ article {
   color: black;
   height: 60px;
   font-size: 10px; }
-
-.projects {
-  display: grid;
-  grid-gap: 0.7rem;
-  grid-template-columns: repeat(3, 1fr); }
-  .projects img {
-    width: 100%;
-    border: 3px rgba(255, 255, 255, 0.123) solid; }
-    .projects img:hover {
-      opacity: 0.5;
-      border-color: #40f8bb;
-      transition: all 0.5s ease-out; }
 
 @media screen and (min-width: 1171px) {
   .workGrid {
