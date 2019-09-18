@@ -80,7 +80,7 @@ main {
 // Works/Project 2 (Apple Style)-------------------------------------
 .workGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(2, minmax(400px, 1fr));
     grid-gap: 30px;
 
 
@@ -188,4 +188,4 @@ article {
 // ---------------------------------------------------------
 
 
-// @import 'mobile';
+@import 'mobile';
