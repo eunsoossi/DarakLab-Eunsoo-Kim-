@@ -1,6 +1,6 @@
 .menu-btn {
   position: absolute;
-  z-index: 10;
+  z-index: 1;
   right: 35px;
   top: 35px;
   cursor: pointer;
@@ -132,7 +132,7 @@ a {
 
 header {
   position: fixed;
-  z-index: 3;
+  z-index: 2;
   width: 100%; }
 
 .text-secondary {
@@ -159,7 +159,7 @@ main {
 
 .workGrid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
   grid-column-gap: 8px;
   grid-row-gap: 2px;
   text-align: center; }
@@ -178,16 +178,16 @@ article {
   width: 100%;
   background-color: #14120f;
   left: 0;
-  z-index: 1;
   opacity: 0.2;
   transition: all 1s ease; }
   .toneblack:hover {
-    background: rgba(0, 0, 0, 0);
+    background-color: rgba(20, 18, 15, 0);
     transition: all 0.5s ease-out; }
 
 .gmarket .projectText,
 .gen315 .projectText,
-.starbucks360 .projectText {
+.starbucks360 .projectText,
+.skt .projectText {
   color: black; }
 
 .projectText {
@@ -195,8 +195,9 @@ article {
   bottom: 1%;
   text-align: left;
   color: white;
+  transition: all 0.5s ease-out;
   padding: 1rem;
-  z-index: 3; }
+  z-index: 1; }
 
 .headtext {
   font-size: 20px;
@@ -242,15 +243,21 @@ article {
 
 @media screen and (min-width: 1171px) {
   .workGrid {
-    grid-template-columns: repeat(2, minmax(400px, 1fr)); } }
+    grid-template-columns: repeat(2, minmax(500px, 1fr)); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .workGrid {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); } }
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); }
+  .posco .projectText {
+    color: black;
+    transition: all 0.5s ease-out; } }
 
 @media screen and (max-width: 768px) {
   .workGrid {
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); }
+    grid-template-columns: repeat(1, minmax(300px, 1fr)); }
+  .posco .projectText {
+    color: black;
+    transition: all 0.5s ease-out; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -281,4 +288,7 @@ article {
     opacity: 0; }
     .toneblack:hover {
       background: rgba(0, 0, 0, 0);
-      transition: all 0.5s ease-out; } }
+      transition: all 0.5s ease-out; }
+  .posco .projectText {
+    color: black;
+    transition: all 0.5s ease-out; } }

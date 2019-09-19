@@ -1,21 +1,35 @@
 // Widescreens
 @include mediaXl {
     .workGrid {
-        grid-template-columns: repeat(2, minmax(400px, 1fr));
+        grid-template-columns: repeat(2, minmax(500px, 1fr));
     }
 }
 
 // Desktop & Laptop
 @include mediaLg {
     .workGrid {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    }
+
+    .posco {
+        .projectText {
+            color: rgb(0, 0, 0);
+            @include easeOut();
+        }
     }
 }
 
 // Tablet & Small Laptops
 @include mediaMd {
     .workGrid {
-        grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
+    }
+
+    .posco {
+        .projectText {
+            color: rgb(0, 0, 0);
+            @include easeOut();
+        }
     }
 
     ul.menu-nav,
@@ -52,6 +66,7 @@
     // main#home h1 {
     //     margin-top: 10vh;
     // }
+    
     .toneblack {
         position: absolute;
         height: 500px;
@@ -63,6 +78,13 @@
     
         &:hover {
             background: rgba(0, 0, 0, 0);
+            @include easeOut();
+        }
+    }
+
+    .posco {
+        .projectText {
+            color: rgb(0, 0, 0);
             @include easeOut();
         }
     }
