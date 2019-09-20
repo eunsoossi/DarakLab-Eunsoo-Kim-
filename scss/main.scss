@@ -17,24 +17,23 @@ body  {
 }
 
 // Heading
-h1,
-h2,
-h3,
-h4 {
-    margin: 0;
-    font-weight: 500;
+.nameTitle h1, h2, h3, h4{
+        margin: 0;
+        font-weight: 500;
 
-    &.lg-heading {
-        font-size: 1.1rem;
-    }
+        &.lg-heading {
+            font-size: 1.1rem;
+        }
 
-    &.sm-heading {
-        font-size: 0.7rem;
-        margin-top: 0.3rem;
-        margin-bottom: 0.2rem;
-        padding: 0.1rem;
-    }
+        &.sm-heading {
+            font-size: 0.7rem;
+            margin-top: 0.3rem;
+            margin-bottom: 0.2rem;
+            padding: 0.1rem;
+        }
 }
+
+
 
 a {
     color: #dbdbdb;
@@ -95,14 +94,14 @@ article {
 }
 
 .article-img {
-    height: 500px;
+    height: $mainPage-imageHeight;
     width: 100%;
     object-fit: cover;
 }
 
 .toneblack {
     position: absolute;
-    height: 500px;
+    height: $mainPage-imageHeight;
     width: 100%;
     background-color: rgb(20, 18, 15);
     left: 0;
@@ -114,7 +113,6 @@ article {
         @include easeOut();
     }
 }
-
 
 // Project Name Text --------
 .gmarket,
@@ -146,8 +144,70 @@ article {
     font-weight: 500;
 }
 // --------------------------
-
 //---------------------------------------------------------------
+
+// Each Portfolio page----------------------------------------------------------------------------
+#portfolioPage {
+    padding: 0;
+}
+
+.fakeTitle {
+    padding: 50px 1.5rem;
+}
+.portfolioTitle {
+    padding: 5rem;
+}
+.portfolio h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.portfolioTitle p {
+    font-size: 35px;
+    text-align: center;
+    font-weight: 300;
+    margin: 0;
+}
+
+.portfolioGrid {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+    grid-column-gap:8px;
+    grid-row-gap: 2px;
+}
+
+article {
+    position: relative;
+}
+
+.portfolio-img {
+    height: $popolPage-imageHeight;
+    width: 100%;
+    object-fit: cover;
+}
+
+// .popol .toneblack {
+//     height: $popolPage-imageHeight;
+//     opacity: 0.1;
+// }
+
+.explain {
+    padding: 0rem 4rem;
+}
+.explain p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100;
+    padding: 8rem 0rem;
+    
+}
+// ---------------------------------------------------------------------------------------
+
+
+
 
 // about, sentence----------------------------------------
 .phrase {
