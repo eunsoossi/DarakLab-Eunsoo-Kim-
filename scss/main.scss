@@ -71,6 +71,9 @@ main {
     .nameTitle {
         padding: 1.5rem;
     }
+    .myName {
+        color: set-text-color($primary-color);
+    }
 
     &#home {
         overflow: hidden;
@@ -152,25 +155,64 @@ article {
 }
 
 .fakeTitle {
-    padding: 50px 1.5rem;
+    padding: 9px;
 }
 .portfolioTitle {
-    padding: 5rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
 }
+
 .portfolio h1 {
     text-align: center;
-    font-size: 50px;
-    font-weight: 700;
+    font-size: 30px;
+    font-weight:300;
     margin-top: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 0.6rem;
 }
 
 .portfolioTitle p {
-    font-size: 35px;
+    font-size: 40px;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
     margin: 0;
+    letter-spacing: -1px;
 }
+
+.videoLink {
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    // font-weight: 300;
+    padding: 3rem;
+    color: rgb(95, 95, 95);
+    .watch {
+        color: rgb(95,95,95);
+    }
+}
+
+.appLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.appBadge {
+    margin: 2rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+}
+
+// .appBadge {
+//     margin-top: 8px;
+//     vertical-align: middle;
+// }
+
+// .column {
+//     flex: 25%;
+//     padding: 0 4px;
+//   }
+
 
 .portfolioGrid {
     display: grid;
@@ -179,14 +221,81 @@ article {
     grid-row-gap: 2px;
 }
 
-article {
-    position: relative;
-}
-
 .portfolio-img {
     height: $popolPage-imageHeight;
     width: 100%;
     object-fit: cover;
+}
+
+.popolPages {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.popolGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-column-gap: 20px;
+}
+
+.portfolio-img-long {
+    height: $popolPage-imageHeight;
+    width: 100%;
+    padding: 15px 0px 12px 0px;
+    object-fit: cover;
+}
+
+.popolGrid article {
+    position: relative;
+}
+
+.popolGrid .portfolio-img {
+    height: 500px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 30px;
+    text-align: center;
+    font-size: 20px;
+    margin: 100px;
+}
+
+// gen315 갤러리 스타일 그리드 -----------------------------------
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 8vw);
+    grid-gap: 10px;
+}
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.crew1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+}
+.crew2, .crew4 {
+    text-align: right;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.crew3, .crew5 {
+    text-align: left;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 300;
 }
 
 // .popol .toneblack {
@@ -201,7 +310,7 @@ article {
     text-align: center;
     font-size: 25px;
     font-weight: 100;
-    padding: 8rem 0rem;
+    padding: 6rem 8rem;
     
 }
 // ---------------------------------------------------------------------------------------
