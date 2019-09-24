@@ -225,14 +225,26 @@ article {
   margin: 0;
   letter-spacing: -1px; }
 
-.videoLink {
+.filmLink {
   position: relative;
   text-align: center;
   font-size: 30px;
-  padding: 3rem;
-  color: #5f5f5f; }
-  .videoLink .watch {
-    color: #5f5f5f; }
+  font-weight: 300;
+  padding: 3rem; }
+  .filmLink a {
+    color: #797878; }
+
+.mfp-hide {
+  display: none; }
+
+#videostory {
+  width: 75%;
+  height: 70%;
+  margin: 0 auto; }
+
+#videostory iframe {
+  width: 100%;
+  margin: 0 auto; }
 
 .appLink {
   display: flex;

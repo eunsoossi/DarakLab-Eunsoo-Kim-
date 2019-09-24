@@ -34,7 +34,6 @@ body  {
 }
 
 
-
 a {
     color: #dbdbdb;
     text-decoration: none;
@@ -178,16 +177,30 @@ article {
     letter-spacing: -1px;
 }
 
-.videoLink {
+.filmLink {
     position: relative;
     text-align: center;
     font-size: 30px;
-    // font-weight: 300;
+    font-weight: 300;
     padding: 3rem;
-    color: rgb(95, 95, 95);
-    .watch {
-        color: rgb(95,95,95);
+    a {
+        color: rgb(121, 120, 120);
     }
+}
+
+.mfp-hide {
+    display: none;
+}
+
+#videostory {
+    width: 75%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+#videostory iframe {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .appLink {
