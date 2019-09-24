@@ -47,11 +47,16 @@
         grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
 
+    //메인페이지 포스코 제목 색변경
     .posco {
         .projectText {
             color: rgb(0, 0, 0);
             @include easeOut();
         }
+    }
+
+    .filmLink {
+        font-size: 20px;
     }
 
     .portfolioGrid {
@@ -135,12 +140,18 @@
         }
     }
 
+    //메인페이지 포스코 제목 색변경
     .posco {
         .projectText {
             color: rgb(0, 0, 0);
             @include easeOut();
         }
     }
+
+    .filmLink {
+        font-size: 15px;
+    }
+
     .portfolioTitle p {
         font-size: 30px;
     }
