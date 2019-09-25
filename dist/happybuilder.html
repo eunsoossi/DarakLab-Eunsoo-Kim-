@@ -31,14 +31,14 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item">
+                <li class="nav-item current">
                     <a href="index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.html" class="nav-link">About</a>
                 </li>
-                <li class="nav-item current">
-                    <a href="work.html" class="nav-link">Works</a>
+                <li class="nav-item">
+                    <a href="work.html" class="nav-link">Labs</a>
                 </li>
                 <li class="nav-item">
                     <a href="contact.html" class="nav-link">Contact</a>
@@ -66,7 +66,7 @@
                         <i class="fas fa-play"></i>&nbsp; Watch Video 
                     </a>
                     <div id="videostory" class="mfp-hide">
-                        <iframe height="600" src="https://www.youtube.com/embed/QvAE8jk5YCw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="600" src="https://www.youtube.com/embed/t6fiOKtlWSQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -87,7 +87,9 @@
                     </div>
                 </article>
                 <div class="explain">
-                    <p>Student volunteer corps, 'Happy Builders' spend 10days in the city of Batangas, Philippines and served as temporary tutors for young students.
+                    <!-- <p>Student volunteer corps, 'Happy Builders' spend 10days in the Philippines and served as temporary tutors for young students.
+                    </p> -->
+                    <p>Student volunteer corps, 'Happy Builders' served as temporary tutors for young students in the Philippines, Vietnam, etc. 
                     </p>
                 </div>
                 <div class="popolPages">
@@ -109,8 +111,28 @@
                         <div class="crew1">Crew</div>
                         <div class="crew2">Client</div>
                         <div class="crew3">POSCO E&C</div>
-                        <div class="crew4">Production</div>
-                        <div class="crew5">Eunsoo Kim</div>
+                        <div class="crew2">Production</div>
+                        <div class="crew3">Eunsoo Kim</div>
+                    </div>
+                    <div class="popolGrid2">
+                        <article>
+                            <div class="popol">
+                                <!-- <div class="toneblack"></div> -->
+                                <img class="portfolio-img-add" src="img/works/poscoVietnam.jpg" alt="posco">
+                            </div>
+                            <div class="ohterVideoLink">
+                                <a href="#video2ndstory" class="button others" id="othersvideolink">
+                                    <i class="fas fa-play"></i>&nbsp; Watch More Video
+                                </a>
+                                <div id="video2ndstory" class="mfp-hide">
+                                    <iframe width="560" height="600" src="https://www.youtube.com/embed/KwHQrwaOvcc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="projectText otherVideoText">
+                                <h3 class="headtext">Happy Builder in Vietnam</h3>
+                                <h4 class="subheadtext">Promotional Video - Posco E&C</h4>
+                            </div>
+                        </article>
                     </div>
                 </div>  
             </div>
@@ -126,6 +148,12 @@
     <script>
         $(document).ready(function() {
             $('#videolink').magnificPopup ({
+                type:'inline',
+                midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+            });         
+        });
+        $(document).ready(function() {
+            $('#othersvideolink').magnificPopup ({
                 type:'inline',
                 midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
             });         

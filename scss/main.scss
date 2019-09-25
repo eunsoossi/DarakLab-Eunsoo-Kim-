@@ -93,6 +93,7 @@ main {
 
 article {
     position: relative;
+    text-align: center;
 }
 
 .article-img {
@@ -163,33 +164,55 @@ article {
 
 .portfolio h1 {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight:300;
     margin-top: 0;
     margin-bottom: 0.6rem;
 }
 
 .portfolioTitle p {
-    font-size: 40px;
+    font-size: 35px;
     text-align: center;
     font-weight: 500;
     margin: 0;
     letter-spacing: -1px;
 }
 
+
+// 비디오 & 앱 링크 ---------------------
 .filmLink {
     position: relative;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
     padding: 3rem;
-    a {
-        color: rgb(121, 120, 120);
-    }
 }
 
 .mfp-hide {
     display: none;
+}
+
+.button {
+    display: inline-block;
+    border: 15px solid set-text-color($primary-color);
+    color: $primary-color;
+    text-transform: uppercase;
+    transition: all 0.5s ease-in-out;
+    border-radius: 50px;
+    background: set-text-color($primary-color);
+
+    &:hover,
+    &:focus {
+        background: transparent;
+        text-decoration: none;
+        color: set-text-color($primary-color);
+        border-color: $primary-color;
+        outline: none;
+    }
+}
+
+.button .fas {
+    margin-left: 4px;
 }
 
 #videostory {
@@ -215,16 +238,7 @@ article {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
 }
-
-// .appBadge {
-//     margin-top: 8px;
-//     vertical-align: middle;
-// }
-
-// .column {
-//     flex: 25%;
-//     padding: 0 4px;
-//   }
+// ---------------------------
 
 
 .portfolioGrid {
@@ -268,16 +282,91 @@ article {
     object-fit: cover;
 }
 
-.info {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 30px;
+.explain {
+    padding: 0rem 4rem;
+}
+.explain p {
     text-align: center;
-    font-size: 20px;
-    margin: 100px;
+    font-size: 23px;
+    font-weight: 100;
+    padding: 6rem 8rem;
+    
 }
 
-// gen315 갤러리 스타일 그리드 -----------------------------------
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    text-align: center;
+    margin: 100px;
+}
+.crew1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 50px;
+    font-weight: 300;
+}
+.crew2 {
+    text-align: right;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+.crew3 {
+    text-align: left;
+    padding: 5px 0;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.portfolio-img-add {
+    -webkit-filter: grayscale(80%);
+    filter: grayscale(80%);
+    height: 350px;
+    width: 100%;
+    padding: 15px 0px 12px 0px;
+    object-fit: cover;
+}
+
+.otherVideoText {
+    padding: 2rem;
+    z-index: 0;
+}
+
+.others {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 15px solid transparent;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+    background: transparent;
+
+    &:hover,
+    &:focus {
+        color: black;
+        border-color: transparent;
+    }
+}
+
+#video2ndstory {
+    width: 75%;
+    height: 70%;
+    margin: 0 auto;
+}
+
+#video2ndstory iframe {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+// gen315 갤러리 스타일 그리드 ----------------------
 .galleryGrid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -289,49 +378,12 @@ article {
     height: 100%;
     object-fit: cover;
 }
-
-.crew1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 50px;
-    font-weight: 300;
-}
-.crew2, .crew4 {
-    text-align: right;
-    padding: 5px 0;
-    font-size: 20px;
-    font-weight: 700;
-}
-.crew3, .crew5 {
-    text-align: left;
-    padding: 5px 0;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-// .popol .toneblack {
-//     height: $popolPage-imageHeight;
-//     opacity: 0.1;
-// }
-
-.explain {
-    padding: 0rem 4rem;
-}
-.explain p {
-    text-align: center;
-    font-size: 25px;
-    font-weight: 100;
-    padding: 6rem 8rem;
-    
-}
-// ---------------------------------------------------------------------------------------
+// ---------------------------------------
 
 
 
 
-// about, sentence----------------------------------------
+// about, sentence-----------------------------
 .phrase {
     font-weight: 300;
     margin: 0;
@@ -341,7 +393,7 @@ article {
     margin-right: -50%;
     transform: translate(-50%, -50%) 
 }
-//--------------------------------------------------------
+//-------------------------------------------
 
 
 // Button Style

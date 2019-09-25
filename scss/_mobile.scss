@@ -84,10 +84,15 @@
         padding-right: 3rem;
     }
     .popolGrid {
-        grid-template-columns: repeat(1, minmax(400px, 1fr));
+        grid-template-columns: repeat(1, minmax(300px, 1fr));
     }
     .popolGrid .portfolio-img {
         height: 400px;
+    }
+
+    .others {
+        font-size: 10px;
+        bottom: 40%;
     }
 
     ul.menu-nav,
@@ -172,9 +177,24 @@
         padding-right: 3rem;
     }
     .popolGrid {
-        grid-template-columns: repeat(1, minmax(400px, 1fr));
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
     }
     .popolGrid .portfolio-img {
         height: 300px;
+    }
+    
+    .crew1 {
+        font-size: 25px;
+    }
+    .crew2 {
+        font-size: 15px;
+    }
+    .crew3 {
+        font-size: 15px;
+    }
+
+    .others {
+        font-size: 10px;
+        bottom: 35%;
     }
 }
